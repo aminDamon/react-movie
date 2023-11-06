@@ -91,7 +91,7 @@ function SwiperWatch({ handleLinkClick }) {
     spaceBetween={30} 
     slidesPerView={1}
     autoplay={{
-        delay: 80000,
+        delay: 10000,
         disableOnInteraction: false,
       }} 
     onSlideChange={() => console.log('slide change')} 

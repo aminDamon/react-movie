@@ -18,13 +18,17 @@ header , header .menu ul ,header .category ul , header .login , header .search_b
 header {
     font-family: semi-bold;
     width: 100%;
-    height: 110px;
+    height: 90px;
     padding: 0 10%; 
     justify-content: center;  
 }
 
 header .menu {
     width: 19%;
+}
+
+header .menu i {
+    display: none;
 }
 
 header .category {
@@ -107,6 +111,17 @@ header .login span:nth-child(2) {
     padding: 0 13px 0 0;
 }
 
+.mobile_icon {
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    width: 60px;
+}
+
+.mobile_icon i:nth-child(2) {
+    /* margin: 0 0 0 40%; */
+}
+
 @media only screen and (max-width: 1350px) {
     header {
         padding: 0 5%;
@@ -128,3 +143,35 @@ header .login span:nth-child(2) {
         padding: 0 1%;
     }
 }
+
+@media only screen and (max-width: 980px) {
+    header {
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+    header .menu ul , header .login , header .search_box {
+        display: none;
+    }
+    header .menu , header .category {
+        width: auto;
+        padding: 0;
+    }
+    header .category {
+        margin-right: 20px;
+    }
+    header .category li {
+        padding: 0 2%;
+    }
+    header .menu i {
+        display: block;
+    }
+
+    header .mobile_icon {
+        display: flex;
+    }
+    header i {
+        font-size: 25px !important;
+    }
+}
+
+
