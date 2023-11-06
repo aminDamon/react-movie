@@ -2,13 +2,13 @@ import React from 'react'
 import './styles/header-style.css'
 import '../../node_modules/font-awesome/css/font-awesome.css'
 import searchIcon from './pic/Vector.png'
-function Header() {
+function Header({backHomeHandler}) {
   return (
     <div>
       <header>
         <div className='menu'>
             <ul>
-                <li><a href='#'>Home</a></li>
+                <li><a href='#' onClick={backHomeHandler}>Home</a></li>
                 <li><a href='#'>Genre</a></li>
                 <li><a href='#'>Country</a></li>
             </ul>
