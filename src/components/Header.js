@@ -58,8 +58,8 @@ export class Header extends Component {
                 <li><a href='#'>Genre</a></li>
                 <li><a href='#'>Country</a></li>
             </ul>
-            <i class='fa fa-home' onClick={backHomeHandler}></i>
-            <i class='fa-solid fa-masks-theater'></i>
+            <i className='fa fa-home' onClick={backHomeHandler}></i>
+            <i className='fa-solid fa-masks-theater'></i>
         </div>
         <div className='search_box'>
             <input type='text' placeholder='Search movies.......'></input>
@@ -84,8 +84,8 @@ export class Header extends Component {
             <i className='fa fa-bell-o'></i>
         </div>
         <div className='mobile_icon'>
-            <i class='fa fa-search'></i>
-            <i class='fa fa-user'></i>
+            <i className='fa fa-search'></i>
+            <i className='fa fa-user'></i>
         </div>
       </header>
     )

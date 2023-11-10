@@ -41,16 +41,6 @@
 
 // export default App
 
-
-
-
-
-import React, { Component } from 'react'
-import All from './components/All';
-import Header from './components/Header';
-import logo from './logo.svg';
-import './App.css';
-
 // function App() {
 //   const [showAll, setShowAll] = useState(true);
 
@@ -72,6 +62,16 @@ import './App.css';
 // }
 
 // export default App;
+
+
+
+import React, { Component } from 'react'
+import All from './components/All';
+import logo from './logo.svg';
+import './App.css';
+import Watch from './components/Watch';
+
+
 
 
 
@@ -104,7 +104,10 @@ class App extends Component {
         {showAll ? (
           <All handleLinkClick={this.handleLinkClick} />
         ) : (
-          <Header backHomeHandler={this.backHomeHandler}/>
+          <>
+          {/* <Header backHomeHandler={this.backHomeHandler}/> */}
+          <Watch backHomeHandler={this.backHomeHandler} main={this.state.main} />
+          </>
         )}
       </div>
     );
