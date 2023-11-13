@@ -51,8 +51,8 @@ function SwiperWatch({ handleLinkClick }) {
 //     { cover: se7enCover , name: "Se7en" , years: 1995 , time: "2:07:00" , star: 8.6 , genre:["Crime" , "Drama" , "MyStery"] },
 //   ];
   console.log("damon");
-
-  let movieList = lists.map((movie, index) => (
+    let mainMovie = lists.slice(0,5)
+  let movieList = mainMovie.map((movie, index) => (
     <SwiperSlide key={index} className='slider'>
       <img src={movie.cover} className='cover' />
       <div className='watch_btn'>

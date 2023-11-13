@@ -103,18 +103,18 @@
 
 @media only screen and (max-width: 980px) {
     .slider {
-        height: 380px !important;
+        height: 320px !important;
     } 
     .slider .caption h1 {
         font-size: 26px;
     }
     .slider .caption {
         width: 90%;
-        transform: translate(10px, 190px);
+        transform: translate(10px, 140px);
     }
 
     .slider .watch_btn {
-        transform: translate(0, 150px);
+        transform: translate(0, 120px);
     }
     .slider .caption p , .slider .watch_btn a:nth-child(2) , .slider .caption .genre:nth-child(2) , .slider .caption .genre:nth-child(3) {
         display: none;

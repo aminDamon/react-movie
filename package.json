@@ -12,8 +12,9 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "^5.0.1",
-    "react-video-js-player": "^1.1.1",
     "swiper": "^11.0.3",
+    "video.js": "^7.15.0",
+    "videojs-seek-buttons": "^3.0.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
