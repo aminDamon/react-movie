@@ -21,6 +21,8 @@ header {
     height: 90px;
     padding: 0 10%; 
     justify-content: center;  
+    z-index: 99;
+    background-color: #000;
 }
 
 header .menu {

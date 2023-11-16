@@ -2,6 +2,9 @@ import React, { Component } from 'react'
 import './styles/all-style.css'
 import Header from './Header'
 import WatchList from './WatchList'
+import RecentUpdate from './RecentUpdate'
+import Trending from './Trending'
+import ReleaseMovie from './ReleaseMovie'
 class All extends Component {
     constructor(props) {
       super(props)
@@ -21,6 +24,9 @@ class All extends Component {
       <div>
         <HeaderTag backHomeHandler={this.props.backHomeHandler} />
         <WatchList handleLinkClick={this.props.handleLinkClick} />
+        <RecentUpdate handleLinkClick={this.props.handleLinkClick} />
+        <Trending handleLinkClick={this.props.handleLinkClick} />
+        <ReleaseMovie />
       </div>
     )
   }

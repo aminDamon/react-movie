@@ -22,23 +22,10 @@ import React from 'react'
 // import Car from './movie/avatar.mp4'
 import Header from './Header';
 import VideoJS from './MyPlayer';
-import { lists } from './list';
-
-
-import inceptionCover from './pic/cover-slider/inception.jpg';
-import avatarCover from './pic/cover-slider/Rectangle 2.png';
-import se7enCover from './pic/cover-slider/se7en.jpg';
-import shutterCover from './pic/cover-slider/shutter.jpg';
-import summerCover from './pic/cover-slider/summer.jpg';
-
-import avatarMovie from './movie/avatar.mp4'
-import inceptionMovie from './movie/inception.mp4'
-import shutterMovie from './movie/shutter.mp4'
-import summerMovie from './movie/500-days.mp4'
-import se7enMovie from './movie/se7en.mp4'
+import { allSeriesMovie, lists } from './list';
 
 function Watch(props) {
-    let myMovie = lists.find((list) => {
+    let myMovie = allSeriesMovie.find((list) => {
         return list.name === props.main
     })
     // console.log(myMovie.cover);

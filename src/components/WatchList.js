@@ -50,7 +50,6 @@ function SwiperWatch({ handleLinkClick }) {
 //     { cover: summerCover , name: "500 Days Of Summer" , years: 2009 , time: "1:39:00" , star: 7.7 , genre:["Comedy" , "Drama" , "Romance"] },
 //     { cover: se7enCover , name: "Se7en" , years: 1995 , time: "2:07:00" , star: 8.6 , genre:["Crime" , "Drama" , "MyStery"] },
 //   ];
-  console.log("damon");
     let mainMovie = lists.slice(0,5)
   let movieList = mainMovie.map((movie, index) => (
     <SwiperSlide key={index} className='slider'>

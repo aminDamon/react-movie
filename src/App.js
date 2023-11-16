@@ -70,6 +70,7 @@ import All from './components/All';
 import logo from './logo.svg';
 import './App.css';
 import Watch from './components/Watch';
+import { allSeriesMovie } from './components/list';
 
 
 
@@ -82,6 +83,7 @@ class App extends Component {
       showAll: true,
       main: "avatar"
     };
+    console.log(allSeriesMovie);
   }
 
   handleLinkClick = (event) => {

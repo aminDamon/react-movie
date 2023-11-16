@@ -1,0 +1,13 @@
+.release_movie {
+    padding: 0 10%;
+}
+
+.release_movie h1 {
+    padding: 0 0 30px 0;
+}
+
+.release img {
+    width: 18vw;
+    height: 25vw;
+    border-radius: 10px;
+}
