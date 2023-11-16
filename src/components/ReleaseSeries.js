@@ -1,21 +1,21 @@
 import React from 'react'
 import './styles/release.css'
-import { lists } from './list'
+import { series } from './list'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Scrollbar, A11y , Autoplay } from 'swiper/modules';
 import '../../node_modules/swiper/swiper-bundle.min.css';
 
-function ReleaseMovie({ handleLinkClick }) {
-  let release = lists.map((rel , index) => {
+function ReleaseSeries({ handleLinkClick }) {
+  let release = series.map((rel , index) => {
     return (
       <SwiperSlide key={index} className='rel_slider'>
         <div className='release'>
-          <img onClick={handleLinkClick} data-movie={rel.name} src={rel.yCover} />
+          <img onClick={handleLinkClick} data-movie={rel.name} src={rel.cover} />
           <div className='caption'>
             <h2 onClick={handleLinkClick} data-movie={rel.name}>{rel.name}</h2>
             <div className='rate'>
               <div className='hd'>HD</div>
-              <div className='time'><i className='fa fa-clock-o'></i> {rel.time}</div>
+              <div className='time'>Season {rel.season}</div>
             </div>
           </div>
         </div>
@@ -28,7 +28,7 @@ function ReleaseMovie({ handleLinkClick }) {
     <div className='release_movie'>
       <br/>
       <br/>
-      <h1 className='h1_body'>New Release Movie</h1>
+      <h1 className='h1_body'>New Release Series</h1>
       <Swiper
       className='rel_swiper' 
       modules={[Navigation, Scrollbar, A11y , Autoplay]}
@@ -60,5 +60,4 @@ function ReleaseMovie({ handleLinkClick }) {
   )
 }
 
-export default ReleaseMovie
-
+export default ReleaseSeries

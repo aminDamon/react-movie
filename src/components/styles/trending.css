@@ -18,6 +18,7 @@
 .trending_img img {
     width: 3vw;
     height: 3vw;
+    cursor: pointer;
 }
 
 .padding_all {
@@ -42,6 +43,7 @@
 
 .trend .caption h2 {
     font-size: 1.5vw;
+    cursor: pointer;
 }
 
 .trend .caption .genre_tag {

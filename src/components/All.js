@@ -5,6 +5,8 @@ import WatchList from './WatchList'
 import RecentUpdate from './RecentUpdate'
 import Trending from './Trending'
 import ReleaseMovie from './ReleaseMovie'
+import ReleaseSeries from './ReleaseSeries'
+import Recommend from './Recommend'
 class All extends Component {
     constructor(props) {
       super(props)
@@ -26,7 +28,9 @@ class All extends Component {
         <WatchList handleLinkClick={this.props.handleLinkClick} />
         <RecentUpdate handleLinkClick={this.props.handleLinkClick} />
         <Trending handleLinkClick={this.props.handleLinkClick} />
-        <ReleaseMovie />
+        <ReleaseMovie handleLinkClick={this.props.handleLinkClick} />
+        <ReleaseSeries handleLinkClick={this.props.handleLinkClick} />
+        <Recommend handleLinkClick={this.props.handleLinkClick} />
       </div>
     )
   }
