@@ -4,6 +4,8 @@ import shutterCover from './pic/cover-slider/shutter.jpg';
 import summerCover from './pic/cover-slider/summer.jpg';
 import inceptionCover from './pic/cover-slider/inception.jpg';
 import oppenheimerCover from './pic/cover-slider/oppenheimer.webp'
+import pulpCover from './pic/cover-slider/pulp.webp'
+import barbieCover from './pic/cover-slider/barbie.jpg'
 
 import coverAvatar from './pic/cover-slider/avatar-y.webp'
 import coverInception from './pic/cover-slider/inception-y.jpg'
@@ -20,6 +22,7 @@ import bansheeCover from './pic/cover-slider/banshee.webp'
 import youCover from './pic/cover-slider/you.avif'
 import vikingsCover from './pic/cover-slider/vikings.jpg'
 import wednesdayCover from './pic/cover-slider/wednesday.jpg'
+import luciferCover from './pic/cover-slider/lucifer.jpg'
 
 import avatarMovie from './movie/avatar.mp4'
 import inceptionMovie from './movie/inception.mp4'
@@ -40,7 +43,7 @@ export let lists = [
         yCover: coverAvatar
     },
     {
-        category: "trending", 
+        category: "", 
         cover: inceptionCover , 
         name: "Inception" ,
         src: inceptionMovie, 
@@ -97,6 +100,30 @@ export let lists = [
         genre:["Action" , "Drama" , "Documentary"] ,
         yCover: oppenheimerCover
     },
+    {
+        category: "none", 
+        cover: pulpCover , 
+        name: "Pulp Fiction" , 
+        src: se7enMovie,
+        type: 'video/mp4',
+        years: 1994 , 
+        time: "2:41:00" , 
+        star: 8.9 , 
+        genre:["Horror" , "Gangster" , "Indie film"] ,
+        yCover: pulpCover
+    },
+    {
+        category: "trending", 
+        cover: barbieCover , 
+        name: "Barbie" , 
+        src: se7enMovie,
+        type: 'video/mp4',
+        years: 2023 , 
+        time: "1:45:00" , 
+        star: 7 , 
+        genre:["Animation" , "Drama" , "Comedy"] ,
+        yCover: barbieCover
+    }
 ];
 
 export let series = [
@@ -183,6 +210,18 @@ export let series = [
         episode: 10,
         star: 8.2 , 
         genre:["Horror" , "Comedy" , "Drama"] 
+    },
+    {
+        category: "none",
+        cover: luciferCover , 
+        name: "Lucifer" , 
+        src: avatarMovie,
+        type: 'video/mp4',
+        years: 2016 , 
+        season: 6,
+        episode: 20,
+        star: 8.1 , 
+        genre:["Action" , "MyStery" , "Detective Fiction"] 
     }
 ]
 

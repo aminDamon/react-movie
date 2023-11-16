@@ -31,6 +31,15 @@ class All extends Component {
         <ReleaseMovie handleLinkClick={this.props.handleLinkClick} />
         <ReleaseSeries handleLinkClick={this.props.handleLinkClick} />
         <Recommend handleLinkClick={this.props.handleLinkClick} />
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
       </div>
     )
   }
