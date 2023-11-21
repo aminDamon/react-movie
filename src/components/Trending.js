@@ -34,9 +34,7 @@ function Trending({ handleLinkClick }) {
     
   return (
     <div className='padding_all'>
-        <br/>
-        <br/>
-        <h1 className='h1_body'>Trending</h1>
+        <h1 className='h1_body padding_top'>Trending</h1>
         <div className='trending'>
         { trend }
         </div>

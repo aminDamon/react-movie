@@ -26,9 +26,7 @@ function ReleaseSeries({ handleLinkClick }) {
   })
   return (
     <div className='release_movie'>
-      <br/>
-      <br/>
-      <h1 className='h1_body'>New Release Series</h1>
+      <h1 className='h1_body padding_top'>New Release Series</h1>
       <Swiper
       className='rel_swiper' 
       modules={[Navigation, Scrollbar, A11y , Autoplay]}

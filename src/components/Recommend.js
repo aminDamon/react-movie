@@ -55,9 +55,7 @@ export class Recommend extends Component {
       })
     return (
       <div className='recommend'>
-        <br/>
-        <br/>
-        <div className='top'>
+        <div className='top padding_top'>
             <h1 className='h1_body'>Recommended</h1>
             <div className={`category ${this.state.activeTag === "movie" ? "active" : ""}`} onClick={this.movieHandler}>Movies</div>
             <div className={`category ${this.state.activeTag === "series" ? "active" : ""}`} onClick={this.seriesHandler}>Series</div>

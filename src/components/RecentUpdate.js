@@ -23,7 +23,7 @@ function RecentUpdate({ handleLinkClick }) {
 
   return (
     <div className='recent_update'>
-      <h1 className='h1_body'>Recently update</h1>
+      <h1 className='h1_body padding_top'>Recently update</h1>
       <Swiper
       className='recent_slide' 
         pagination={{ clickable: true }}

@@ -23,13 +23,13 @@ import React from 'react'
 import Header from './Header';
 import VideoJS from './MyPlayer';
 import { allSeriesMovie, lists } from './list';
+import Info from './Info';
 
 function Watch(props) {
     let myMovie = allSeriesMovie.find((list) => {
         return list.name === props.main
     })
     // console.log(myMovie.cover);
-
 
 
     const playerRef = React.useRef(null);
@@ -57,6 +57,7 @@ function Watch(props) {
     <div>
       <Header backHomeHandler={props.backHomeHandler}/>
       <VideoJS options={videoJsOptions} onReady={handlePlayerReady} />
+      <Info selectMovie={myMovie}/>
     </div>
   )
 }
