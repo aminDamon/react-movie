@@ -91,12 +91,8 @@ class App extends Component {
       { showAll: false,
         main: event.target.dataset.movie
      });
-     window.onclick = () => {
-      if (!this.state.showAll) {
-        window.scrollTo({top: 0 , behavior: "smooth"})
-      }
-      
-     }
+      window.scrollTo({top: 0 , behavior: "smooth"})
+
     console.log(event.target.dataset.movie);
   };
 
