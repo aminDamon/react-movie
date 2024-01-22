@@ -4,12 +4,12 @@ import { lists } from './list'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Scrollbar, A11y , Autoplay } from 'swiper/modules';
 import '../../node_modules/swiper/swiper-bundle.min.css';
-
+import { NavLink } from 'react-router-dom';
 function ReleaseMovie({ handleLinkClick }) {
   let release = lists.map((rel , index) => {
     return (
       <SwiperSlide key={index} className='rel_slider'>
-        <div className='release'>
+        <NavLink to={rel.name.toLocaleLowerCase().split(' ')[0]} className='release'>
           <img onClick={handleLinkClick} data-movie={rel.name} src={rel.yCover} />
           <div className='caption'>
             <h2 onClick={handleLinkClick} data-movie={rel.name}>{rel.name}</h2>
@@ -18,7 +18,7 @@ function ReleaseMovie({ handleLinkClick }) {
               <div className='time'><i className='fa fa-clock-o'></i> {rel.time}</div>
             </div>
           </div>
-        </div>
+        </NavLink>
       
       
     </SwiperSlide>
@@ -36,8 +36,7 @@ function ReleaseMovie({ handleLinkClick }) {
           delay: 5000,
           disableOnInteraction: false,
         }} 
-      onSlideChange={() => console.log('slide change')} 
-      onSwiper={(swiper) => console.log(swiper)}>
+>
         {release}
     </Swiper>
     <Swiper 
@@ -49,8 +48,7 @@ function ReleaseMovie({ handleLinkClick }) {
           delay: 5000,
           disableOnInteraction: false,
         }} 
-      onSlideChange={() => console.log('slide change')} 
-      onSwiper={(swiper) => console.log(swiper)}>
+>
         {release}
     </Swiper>
     

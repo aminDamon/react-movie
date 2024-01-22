@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import './styles/recommend.css'
 import { lists, series } from './list';
+import { NavLink } from 'react-router-dom';
 
 export class Recommend extends Component {
     constructor(props) {
@@ -19,7 +20,6 @@ export class Recommend extends Component {
             category: lists,
             activeTag: "movie"
         })
-        console.log(this.state.category);
     }
 
     seriesHandler() {
@@ -27,7 +27,6 @@ export class Recommend extends Component {
             category: series,
             activeTag: "series"
         })
-        console.log(this.state.category);
     }
 
     handler() {
@@ -38,7 +37,7 @@ export class Recommend extends Component {
   render() {
     let Recommended = this.state.category.map((rec , index) => {
         return(
-           <div key={index} className='recommended rel_slider'>
+           <NavLink to={rec.name.toLocaleLowerCase().split(' ')[0]} key={index} className='recommended rel_slider'>
             <div className='release'>
             <img onClick={this.props.handleLinkClick} data-movie={rec.name} src={this.state.activeTag === "movie" ? `${rec.yCover}` : `${rec.cover}`} />
             <div className='caption'>
@@ -49,7 +48,7 @@ export class Recommend extends Component {
                 </div>
             </div>
             </div>
-            </div> 
+            </NavLink> 
         )
         
       })

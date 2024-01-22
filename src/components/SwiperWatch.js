@@ -11,7 +11,6 @@ function SwiperWatch(movie) {
       onSlideChange={() => console.log('slide change')}
       onSwiper={(swiper) => console.log(swiper)}
     >
-      {/* <SwiperSlide><img src={avatarCover}/></SwiperSlide> */}
       <SwiperSlide>slide</SwiperSlide>
       <SwiperSlide>slide</SwiperSlide>
       <SwiperSlide>slide</SwiperSlide>

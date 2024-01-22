@@ -52,50 +52,6 @@
     line-height: 1;
 }
 
-/* 
-.vjs-icon-volume-high:before, .video-js .vjs-mute-control .vjs-icon-placeholder:before {
-    margin-left: -1vw;
-}
-
-.video-js .vjs-seek-button.skip-back::before, .video-js.vjs-v6 .vjs-seek-button.skip-back .vjs-icon-placeholder::before, .video-js.vjs-v7 .vjs-seek-button.skip-back .vjs-icon-placeholder::before {
-    transform: rotate(0deg) translateX(28.6vw) !important;
-}
-
-.video-js .vjs-seek-button.skip-forward::before, .video-js.vjs-v6 .vjs-seek-button.skip-forward .vjs-icon-placeholder::before, .video-js.vjs-v7 .vjs-seek-button.skip-forward .vjs-icon-placeholder::before {
-    transform: rotate(0deg) translateX(31.5vw) scale(-1,1) !important;
-}
-
-.vjs-icon-fullscreen-enter:before, .video-js .vjs-fullscreen-control .vjs-icon-placeholder:before {
-    transform: translateX(-11vw); 
-}
-
-.vjs-icon-picture-in-picture-enter:before, .video-js .vjs-picture-in-picture-control .vjs-icon-placeholder:before {
-    transform: translateX(-12vw);
-}
-
-
-vpdbnd
-
-
-
-
-
-
-.video-js .vjs-big-play-button {
-    background-color: #767676;
-    color: #ff0000;
-    font-size: 4vw;
-}
-
-
-.vjs-play-control.vjs-control.vjs-button.vjs-paused , .vjs-play-control.vjs-control.vjs-button.vjs-playing {
-    transform: translateX(34vw);
-}
-
-.video-js .vjs-progress-control {
-    transform: translateY(-40px) scaleX(1.2);
-} */
-
 @media only screen and (max-width: 980px) {
     .vjs-play-control.vjs-control.vjs-button.vjs-paused , .vjs-play-control.vjs-control.vjs-button.vjs-playing {
         transform: translateX(0);

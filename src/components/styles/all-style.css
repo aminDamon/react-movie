@@ -23,6 +23,10 @@ a {
     font-size: 2.1vw;
 }
 
+.error h1 , .error h2 {
+    text-align: center;
+}
+
 @media only screen and (max-width: 980px) {
     .h1_body {
         font-size: 4vw;

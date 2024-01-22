@@ -46,7 +46,7 @@ export let lists = [
     {
         category: "none", 
         cover: avatarCover , 
-        name: "Avatar: The Way of Water" , 
+        name: "Avatar : The Way of Water" , 
         src: avatarMovie,
         type: 'video/mp4',
         years: 2022 , time: "3:12:00" , 

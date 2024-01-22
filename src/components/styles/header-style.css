@@ -85,7 +85,6 @@ header .search_box {
     color: #000;
     border-radius: 25px;
     position: relative;
-    /* margin-left: 4%; */
 }
 
 header .search_box input {
@@ -118,10 +117,6 @@ header .login span:nth-child(2) {
     align-items: center;
     justify-content: space-between;
     width: 60px;
-}
-
-.mobile_icon i:nth-child(2) {
-    /* margin: 0 0 0 40%; */
 }
 
 @media only screen and (max-width: 1350px) {

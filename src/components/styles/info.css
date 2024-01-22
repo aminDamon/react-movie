@@ -26,7 +26,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* margin-bottom: 80px; */
 }
 
 .information .info .right .rate {
@@ -34,11 +33,6 @@
     align-items: center;
     justify-content: space-between;
     width: 65%;
-    /* margin-bottom: 20px; */
-}
-
-.information .info .right .caption {
-    /* margin-bottom: 60px; */
 }
 
 .information .info .right .rate .genre_parent {
